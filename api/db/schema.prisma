@@ -36,6 +36,7 @@ model User {
   resetToken          String?
   resetTokenExpiresAt DateTime?
   Posts               Post[]
+  roles               String    @default("moderator")
 }
 
 model Comment {
