@@ -9,9 +9,9 @@ import type {
 
 import Posts from 'src/components/Post/Posts'
 
-export const QUERY: TypedDocumentNode<FindPosts, FindPostsVariables> = gql`
-  query FindPosts {
-    posts {
+export const QUERY = gql`
+  query POSTS {
+    posts: adminPosts {
       id
       title
       body
